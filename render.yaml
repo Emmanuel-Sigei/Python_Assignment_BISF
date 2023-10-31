@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: flask-pixel
+    name: GBV Awareness Website
     plan: free
     env: python
     region: frankfurt  # region should be same as your database region.
