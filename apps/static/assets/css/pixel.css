@@ -6877,6 +6877,10 @@ fieldset:disabled .btn {
   }
 }
 
+.accordion{
+  padding-left: 2rem !important;
+}
+
 .accordion-button {
   position: relative;
   display: flex;
@@ -6887,7 +6891,6 @@ fieldset:disabled .btn {
   color: #1F2937;
   text-align: left;
   background-color: transparent;
-  border: 0.0625rem solid #E5E7EB;
   border-radius: 0;
   overflow-anchor: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
@@ -6939,7 +6942,6 @@ fieldset:disabled .btn {
   z-index: 3;
   border-color: #6B7280;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(36, 46, 76, 0.25);
 }
 
 .accordion-header {
@@ -29439,6 +29441,46 @@ blockquote {
 .ct-area,
 .ct-line {
   pointer-events: none;
+}
+
+.why-us .content {
+  padding: 60px 100px 0 100px;
+}
+
+.why-us .content h3 {
+  font-weight: 400;
+  font-size: 34px;
+  color: #37517e;
+}
+
+.why-us .content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.why-us .content p {
+  font-size: 15px;
+  color: #848484;
+}
+
+@media (max-width: 1024px) {
+
+  .why-us .content,
+  .why-us .accordion-list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .why-us .row {
+      flex-direction: column-reverse !important;
+  }
+  .why-us .col-lg-7,
+  .why-us .col-lg-5 {
+      width: 100% !important;
+  }
 }
 
 /*# sourceMappingURL=pixel.css.map */
