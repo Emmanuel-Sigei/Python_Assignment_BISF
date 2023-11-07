@@ -1,0 +1,98 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} PDF Resources {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<main>
+
+    {% include 'includes/preloader.html' %}
+
+    <!-- Hero -->
+    <section class="section-header bg-secondary text-white">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-12 col-md-7 col-lg-6 text-center text-md-left">
+                    <h1 class="display-4 mb-4">Read research that has been <br class="d-none d-md-inline">Conducted by
+                        Experts on GBV.</h1>
+                    <p class="lead">This page is a Treasure Trove of Educational Materials and Resources.</p>
+                </div>
+                <div class="col-12 col-md-5 d-none d-md-block text-center"><img
+                        src="/static/assets/img/illustrations/about-illustration.svg" alt=""></div>
+            </div>
+        </div>
+        <figure class="position-absolute bottom-0 left-0 w-100 d-none d-md-block mb-n2">
+            <svg class="fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 43.4"
+                style="enable-background:new 0 0 1920 43.4;" xml:space="preserve">
+                <path
+                    d="M0,23.3c0,0,405.1-43.5,697.6,0c316.5,1.5,108.9-2.6,480.4-14.1c0,0,139-12.2,458.7,14.3 c0,0,67.8,19.2,283.3-22.7v35.1H0V23.3z">
+                </path>
+            </svg>
+        </figure>
+    </section>
+    <!--Hero-->
+
+    <!--PDF Files-->
+    <section>
+        <div class="container">
+            <div class="row align-items-center mt-3">
+                <div class="col-md-6 col-lg-4 text-center h-100" id="GBV_Doc_1">
+                    <div class="card border-gray-300 mb-4">
+                        <div class="card-body py-5">
+                            <!-- Embed the PDF document -->
+                            <embed src="{{ url_for('pdf_server.download_pdf', filename='SAMPLE DESIGN.pdf') }}"
+                                type="application/pdf" width="100%" height="400">
+                            <p class="card-title fw-bold text-dark mt-2 mb-2">GBV Doc 1</p>
+                            <p class="card-text py-4 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                                quam non ad. Nesciunt asperiores sed nisi maiores tempore minima porro.</p>
+                            <a href="{{ url_for('pdf_server.download_pdf', filename='SAMPLE DESIGN.pdf') }}"
+                                class="btn btn-primary btn-sm" target="_blank">Open PDF</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 text-center h-100" id="GBV_Doc_2">
+                    <div class="card border-gray-300 mb-4">
+                        <div class="card-body py-5">
+                            <!-- Embed the PDF document -->
+                            <embed
+                                src="{{ url_for('pdf_server.download_pdf', filename='EMMANUEL SIGEI - 2003807 - CYBER SECURITY CAT TWO.pdf') }}"
+                                type="application/pdf" width="100%" height="400">
+                            <p class="card-title fw-bold text-dark mt-2 mb-2">GBV Doc 2</p>
+                            <p class="card-text py-4 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                                dolor fugiat atque assumenda voluptatum ex eum aliquam nihil placeat quasi?</p>
+                            <a href="{{ url_for('pdf_server.download_pdf', filename='EMMANUEL SIGEI - 2003807 - CYBER SECURITY CAT TWO.pdf') }}"
+                                class="btn btn-primary btn-sm" target="_blank">Open PDF</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 text-center h-100" id="GBV_Doc_3">
+                    <div class="card border-gray-300 mb-4">
+                        <div class="card-body py-5">
+                            <!-- Embed the PDF document -->
+                            <embed
+                                src="{{ url_for('pdf_server.download_pdf', filename='BISF 3103 CYBER SECURITY CAT#2 .pdf') }}"
+                                type="application/pdf" width="100%" height="400">
+                            <p class="card-title fw-bold text-dark mt-2 mb-2">GBV Doc 3</p>
+                            <p class="card-text py-4 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                                dolor fugiat atque assumenda voluptatum ex eum aliquam nihil placeat quasi?</p>
+                            <a href="{{ url_for('pdf_server.download_pdf', filename='BISF 3103 CYBER SECURITY CAT#2 .pdf') }}"
+                                class="btn btn-primary btn-sm" target="_blank">Open PDF</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--PDF Files-->
+
+</main>
+
+{% include 'includes/footer.html' %}
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

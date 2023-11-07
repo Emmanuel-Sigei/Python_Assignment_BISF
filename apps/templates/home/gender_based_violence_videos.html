@@ -1,0 +1,67 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} GBV Videos {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<main>
+
+    {% include 'includes/preloader.html' %}
+
+    <!-- Hero -->
+    <section class="section-header bg-secondary text-white">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-12 col-md-7 col-lg-6 text-center text-md-left">
+                    <h1 class="display-4 mb-4">Read research that has been <br class="d-none d-md-inline">Conducted by
+                        Experts on GBV.</h1>
+                    <p class="lead">This page is a Treasure Trove of Educational Materials and Resources.</p>
+                </div>
+                <div class="col-12 col-md-5 d-none d-md-block text-center"><img
+                        src="/static/assets/img/illustrations/about-illustration.svg" alt=""></div>
+            </div>
+        </div>
+        <figure class="position-absolute bottom-0 left-0 w-100 d-none d-md-block mb-n2">
+            <svg class="fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 43.4"
+                style="enable-background:new 0 0 1920 43.4;" xml:space="preserve">
+                <path
+                    d="M0,23.3c0,0,405.1-43.5,697.6,0c316.5,1.5,108.9-2.6,480.4-14.1c0,0,139-12.2,458.7,14.3 c0,0,67.8,19.2,283.3-22.7v35.1H0V23.3z">
+                </path>
+            </svg>
+        </figure>
+    </section>
+    <!--Hero-->
+
+    <!--Videos-->
+    <div class="container mt-4 text-center">
+        <h1 class="mb-4">Videos on Gender-Based Violence</h1>
+        <div class="row">
+            {% for video in videos %}
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ video.title }}</h5>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/{{ video.video_id }}" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <!--Videos-->
+
+</main>
+
+{% include 'includes/footer.html' %}
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

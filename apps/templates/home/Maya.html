@@ -1,0 +1,78 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Maya's Story {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<main>
+
+    {% include 'includes/preloader.html' %}
+
+    <!-- Hero -->
+    <div class="section-header bg-primary-app pb-0">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <img src="/static/assets/img/team/Maya.jpg"
+                        class="rounded-circle img-thumbnail image-lg border-gray-300 p-2" alt="Profile image">
+                    <div class="mt-4 mb-5">
+                        <h1 class="display-2 fw-normal my-4">Hello, I’m Maya and I'm a <span
+                                class="text-through fw-bold">Victim</span> Survivor.</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Hero-->
+
+    <!--Story-->
+    <section class="section section-lg pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-left text-md-right">
+                    <p class="lead fw-bold text-dark">I'm Maya. I was a victim of emotional abuse for years. It left me
+                        shattered, with no self-esteem. Finally, I realized I deserved better. Support from a local
+                        women's group empowered me to leave. Now, I mentor others to escape toxic relationships and
+                        rebuild their lives.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>My name is Maya, and I'm a survivor of gender-based violence. For years, I endured emotional
+                        abuse in silence. The verbal attacks, manipulation, and control shattered my self-esteem until I
+                        barely recognized myself. I felt trapped in a cycle that seemed impossible to break.</p>
+                    <p class="d-none d-lg-block">But one day, I realized that I deserved better. With the support of a
+                        local women's group, I found the courage to leave that toxic relationship. It wasn't easy, and
+                        the journey to healing was long and challenging.</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Now, I've made it my mission to help others escape similar toxic relationships and rebuild their
+                        lives. I mentor survivors, offering a hand to hold, a shoulder to lean on, and a heart full of
+                        empathy. Because no one should ever feel trapped in a relationship that diminishes their
+                        self-worth, and everyone deserves the chance to find healing and happiness.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center mt-5">
+                <div class="col-md-8">
+                    <blockquote class="blockquote text-center">
+                        One day, I realized that I deserved better. With the support of a
+                        local women's group, I found the courage to leave that toxic relationship. It wasn't easy, and
+                        the journey to healing was long and challenging.
+                        <footer class="blockquote-footer mt-3 text-primary">Maya</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Story-->
+
+</main>
+
+{% include 'includes/footer.html' %}
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

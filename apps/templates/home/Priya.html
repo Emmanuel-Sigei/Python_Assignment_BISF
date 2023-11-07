@@ -1,0 +1,87 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Priya's Story {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<main>
+
+    {% include 'includes/preloader.html' %}
+
+    <!-- Hero -->
+    <div class="section-header bg-primary-app pb-0">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <img src="/static/assets/img/team/Priya.jpg"
+                        class="rounded-circle img-thumbnail image-lg border-gray-300 p-2" alt="Profile image">
+                    <div class="mt-4 mb-5">
+                        <h1 class="display-2 fw-normal my-4">Hello, I’m Priya and I'm a <span
+                                class="text-through fw-bold">Victim</span> Survivor.</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Hero-->
+
+    <!--Story-->
+    <section class="section section-lg pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-left text-md-right">
+                    <p class="lead fw-bold text-dark">My name is Priya. I survived human trafficking and sexual
+                        exploitation. It was hell, but I managed to escape. I'm now an ambassador for organizations
+                        fighting against human trafficking, helping other survivors reclaim their lives and dignity.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>I'm Priya, a survivor of human trafficking and exploitation. Every day was a battle for survival,
+                        but I escaped. Now, I'm an ambassador fighting against human trafficking, providing hope to
+                        survivors. No one should endure what I did; I'm committed to helping others find their path to
+                        freedom and dignity.</p>
+                    <p class="d-none d-lg-block">I was trafficked and exploited when I was just a teenager. I was lured
+                        away from my home with false promises of a better life. But instead, I was forced to work long
+                        hours in horrific conditions, and I was subjected to physical and emotional abuse.
+                        I was trapped for years, but I never gave up hope. I knew that I had to find a way to escape.
+                        One day, I saw an opportunity and I took it. I ran away and found help.
+                        It was not easy to rebuild my life after my experience, but I am determined to make a
+                        difference. I now work as an ambassador for an organization that fights against human
+                        trafficking. I share my story to raise awareness about this important issue, and to provide hope
+                        to other survivors.</p>
+                </div>
+                <div class="col-md-4">
+                    <p>I know that my story is just one of many. There are millions of people around the world who have
+                        been affected by human trafficking. But I want everyone to know that they are not alone. There
+                        are people who care about them and want to help.
+                        <br>
+                        I am committed to fighting against human trafficking and exploitation.
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center mt-5">
+                <div class="col-md-8">
+                    <blockquote class="blockquote text-center">
+                        I was trapped for years, but I never gave up hope. I knew that I had to find a way to escape.
+                        One day, I saw an opportunity and I took it. I ran away and found help.
+                        It was not easy to rebuild my life after my experience, but I am determined to make a
+                        difference.
+                        <footer class="blockquote-footer mt-3 text-primary">Carlos</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Story-->
+
+</main>
+
+{% include 'includes/footer.html' %}
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

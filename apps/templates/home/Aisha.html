@@ -1,0 +1,84 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Aisha's Story {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<main>
+
+    {% include 'includes/preloader.html' %}
+
+    <!-- Hero -->
+    <div class="section-header bg-primary-app pb-0">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <img src="/static/assets/img/team/Aisha.jpg"
+                        class="rounded-circle img-thumbnail image-lg border-gray-300 p-2" alt="Profile image">
+                    <div class="mt-4 mb-5">
+                        <h1 class="display-2 fw-normal my-4">Hello, I’m Aisha and I'm a <span
+                                class="text-through fw-bold">Victim</span> Survivor.</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Hero-->
+
+    <!--Story-->
+    <section class="section section-lg pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-left text-md-right">
+                    <p class="lead fw-bold text-dark">I'm Aisha, a survivor of child marriage and domestic abuse. It
+                        felt like a never-ending nightmare. Legal aid gave me the courage to escape, and now I advocate
+                        for girls' education and women's rights in my community.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>I was forced into marriage at the age of 14. My husband was much older than me, and he was cruel
+                        and abusive. He beat me regularly, and he controlled every aspect of my life. I was afraid to
+                        leave him, because I didn't know where to go or what to do.
+                        But one day, I finally had enough. I learned about a legal aid organization that could help me
+                        get a divorce. I reached out to them, and they provided me with the support and guidance I
+                        needed.</p>
+                    <p class="d-none d-lg-block">At the consultation, I met with a lawyer who was kind and
+                        understanding. She listened to my story and explained my legal options. She told me that I had
+                        the right to get a divorce, and that she could help me through the process.
+                        I decided to file for divorce. It was a long and difficult process, but I was determined to see
+                        it through. My lawyer was there for me every step of the way. She provided me with emotional
+                        support and legal guidance.</p>
+                </div>
+                <div class="col-md-4">
+                    <p>In the end, I was successful in getting a divorce. I was finally free from my abusive husband. I
+                        could now start to rebuild my life and create a better future for myself.
+                        I am now using my voice to advocate for girls' education and women's rights. I want other girls
+                        and women to know that they are not alone, and that there is help available. I want them to know
+                        that they have the right to live free from violence and abuse.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center mt-5">
+                <div class="col-md-8">
+                    <blockquote class="blockquote text-center">
+                        I finally had enough. I learned about a legal aid organization that could help me
+                        get a divorce. I reached out to them, and they provided me with the support and guidance I
+                        needed.
+                        <footer class="blockquote-footer mt-3 text-primary">Aisha</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Story-->
+
+</main>
+
+{% include 'includes/footer.html' %}
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

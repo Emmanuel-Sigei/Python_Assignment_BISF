@@ -1,0 +1,81 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Sarah's Story {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<main>
+
+    {% include 'includes/preloader.html' %}
+
+    <!-- Hero -->
+    <div class="section-header bg-primary-app pb-0">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <img src="/static/assets/img/team/Sarah.jpg"
+                        class="rounded-circle img-thumbnail image-lg border-gray-300 p-2" alt="Profile image">
+                    <div class="mt-4 mb-5">
+                        <h1 class="display-2 fw-normal my-4">Hello, I’m Sarah and I'm a <span
+                                class="text-through fw-bold">Victim</span> Survivor.</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Hero-->
+
+    <!--Story-->
+    <section class="section section-lg pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-left text-md-right">
+                    <p class="lead fw-bold text-dark">My name is Sarah. I survived gender-based violence. It began as
+                        control and escalated to physical abuse. I felt trapped, but one day, I found the strength to
+                        break free. It was hard, but with the support of friends and therapy, I rebuilt my life. Now,
+                        I'm an advocate for survivors, helping them find their strength too.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>In the depths of my darkest moments, I'm Sarah, a survivor of gender-based violence. It all began
+                        with subtle control, but gradually, it escalated to physical and emotional abuse. I felt trapped
+                        in a never-ending nightmare. The isolation, the fear, the bruises I tried to hide—it was my life
+                        for too long.</p>
+                    <p class="d-none d-lg-block">One day, though, something inside me stirred. I found the strength to
+                        break free from the chains that bound me to my abuser. It was hard, incredibly hard. But with
+                        the support of some incredible friends and professional therapy, I began to rebuild my life, one
+                        piece at a time. The scars, both visible and invisible, started to heal.</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Now, I'm an advocate for survivors. I work tirelessly to help others find their strength, just as
+                        I did. Together, we share our stories, lend a listening ear, and hold hands through the darkest
+                        hours. Because no one should ever have to endure what we did, and no one should have to face it
+                        alone.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center mt-5">
+                <div class="col-md-8">
+                    <blockquote class="blockquote text-center">
+                        I found the strength to
+                        break free from the chains that bound me to my abuser. It was hard, incredibly hard. But with
+                        the support of some incredible friends and professional therapy, I began to rebuild my life, one
+                        piece at a time. The scars, both visible and invisible, started to heal.
+                        <footer class="blockquote-footer mt-3 text-primary">Sarah</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Story-->
+
+</main>
+
+{% include 'includes/footer.html' %}
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

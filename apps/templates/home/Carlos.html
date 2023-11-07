@@ -1,0 +1,86 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Carlos's Story {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<main>
+
+    {% include 'includes/preloader.html' %}
+
+    <!-- Hero -->
+    <div class="section-header bg-primary-app pb-0">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <img src="/static/assets/img/team/Carlos.jpg"
+                        class="rounded-circle img-thumbnail image-lg border-gray-300 p-2" alt="Profile image">
+                    <div class="mt-4 mb-5">
+                        <h1 class="display-2 fw-normal my-4">Hello, I’m Carlos and I'm a <span
+                                class="text-through fw-bold">Victim</span> Survivor.</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Hero-->
+
+    <!--Story-->
+    <section class="section section-lg pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-left text-md-right">
+                    <p class="lead fw-bold text-dark">I'm Carlos. I was a victim of workplace harassment, a form of
+                        gender-based violence too often ignored. When I spoke up, my colleagues and I took action. Now,
+                        I'm an activist raising awareness about workplace harassment for all genders.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>I'm Carlos, a survivor of workplace harassment. My story is often overlooked, because GBV can
+                        happen to anyone, regardless of gender. But I want to share my story to raise awareness about
+                        this important issue.
+                        I experienced workplace harassment for years. My boss would make inappropriate comments to me,
+                        and he would touch me without my consent. I felt uncomfortable and unsafe at work, and it began
+                        to affect my mental and physical health.</p>
+                    <p class="d-none d-lg-block">I tried to ignore the harassment at first, but it only got worse. I
+                        started to dread going to work, and I began to make mistakes. I knew that I couldn't go on like
+                        this, so I decided to speak up.
+                        I went to HR and reported the harassment. They were initially skeptical, but they eventually
+                        agreed to investigate. My boss was interviewed, but he denied everything.
+                        Without any evidence, HR was unable to take any disciplinary action against my boss. I was
+                        devastated. I felt like I had been betrayed.</p>
+                </div>
+                <div class="col-md-4">
+                    <p>I didn't know what to do next. I was afraid to lose my job, but I couldn't continue working in a
+                        hostile environment. I decided to quit my job.
+                        It was a difficult decision, but it was the right one. I am now working for a company that
+                        values respect and inclusion. I am finally able to work in a safe and supportive environment.
+                        I want to share my story to encourage other survivors of workplace harassment to speak up. You
+                        are not alone, and you deserve to be treated with respect. There are people who care about you
+                        and want to help.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center mt-5">
+                <div class="col-md-8">
+                    <blockquote class="blockquote text-center">
+                        It was a difficult decision, but it was the right one. I am now working for a company that
+                        values respect and inclusion. I am finally able to work in a safe and supportive environment.
+                        <footer class="blockquote-footer mt-3 text-primary">Carlos</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Story-->
+
+</main>
+
+{% include 'includes/footer.html' %}
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

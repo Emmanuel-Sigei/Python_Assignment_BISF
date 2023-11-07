@@ -26511,7 +26511,8 @@ label {
 }
 
 .image-md {
-  height: 5rem;
+  height: 7rem;
+  border-radius: 20px !important;
 }
 
 .image-sm {
