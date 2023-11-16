@@ -1,7 +1,7 @@
 version: '3.8'
 services:
-  appseed-app:
-    container_name: appseed_app
+  python_assignent:
+    container_name: python_assignent
     restart: always
     env_file: .env
     build: .
@@ -19,7 +19,7 @@ services:
     networks:
       - web_network
     depends_on: 
-      - appseed-app
+      - python_assignent
 networks:
   db_network:
     driver: bridge

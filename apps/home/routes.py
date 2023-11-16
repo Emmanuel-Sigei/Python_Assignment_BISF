@@ -24,21 +24,18 @@ def route_template(template):
     except:
         return render_template('home/page-500.html'), 500
 
-@blueprint.route('/gender_based_violence_videos.html')  # Define a new route for displaying videos
+@blueprint.route('/gender_based_violence_videos.html')
 @login_required
 def display_youtube_videos():
     try:
-        # Define the query to search for YouTube videos
         query = "Gender Based Violence in Kenya"
 
-        # Call the function to retrieve YouTube videos
         videos = search_youtube_videos(query, max_results=10)
 
         return render_template('home/gender_based_violence_videos.html', videos=videos, segment='videos')
     except:
         return render_template('home/page-500.html'), 500
 
-# Helper - Extract current page name from request
 def get_segment(request):
     try:
         segment = request.path.split('/')[-1]

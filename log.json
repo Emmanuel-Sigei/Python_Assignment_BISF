@@ -1,9 +1,9 @@
 {
     "backend": "flask",
-    "db_name": "",
-    "db_pass": "",
+    "db_name": "Python_Assignment",
+    "db_pass": "2017Kemoi",
     "db_type": "mysql",
-    "db_user": "",
+    "db_user": "Manu",
     "dbms": "1",
     "description": "generated product",
     "design": "python-assignment",

@@ -10,16 +10,13 @@ from sys import exit
 
 from apps.config import config_dict
 from apps import create_app, db
-from apps.pdf_server import pdf_server  # Import the pdf_server blueprint
+from apps.pdf_server import pdf_server
 
-# WARNING: Don't run with debug turned on in production!
 DEBUG = (os.getenv('DEBUG', 'False') == 'True')
 
-# The configuration
 get_config_mode = 'Debug' if DEBUG else 'Production'
 
 try:
-    # Load the configuration using the default values
     app_config = config_dict[get_config_mode.capitalize()]
 
 except KeyError:
@@ -28,7 +25,6 @@ except KeyError:
 app = create_app(app_config)
 Migrate(app, db)
 
-# Register the pdf_server blueprint after creating the app instance
 app.register_blueprint(pdf_server)
 
 if not DEBUG:
